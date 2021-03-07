@@ -10,6 +10,7 @@ Sistema para gestão de agendamentos em Clínicas Médicas, projeto da disciplin
 
 - Cadastrar novos usuários (Pacientes, Atendentes e Médicos)
 - Deletar usuários
+- Listar todos os funcionários
 - Listar Médicos
 - Listar Horários disponíveis para agendamento
 - Cadastrar nova consulta
