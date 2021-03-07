@@ -35,3 +35,5 @@ preciso também ter a possibilidade de guardar registros sobre as consultas.
 - Como Atendente, preciso ter a possibilidade de verificar a agenda de todos os médicos para ver a disponibilidade de cada um deles pois,
 preciso destas informações para realizar o agendamento das novas consultas, caso haja necessidade tambem precisarei cancelar consultas marcadas
 e também cadastrar novos pacientes que acabaram de chegar à clinica
+
+[Use Case Diagram](https://github.com/tiagojordao/Clinicas-Medicas/blob/master/UCD.png)
