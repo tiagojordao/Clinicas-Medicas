@@ -7,5 +7,6 @@ const routes = new Router();
 
 routes.get('/users', DoctorController.index);
 routes.post('/users', UserController.store);
+routes.delete('/users/:id', UserController.delete);
 
 export default routes;

@@ -14,6 +14,17 @@ class UserController {
 
     return res.json({ name, email, phone, position });
   }
+
+  async delete(req, res) {
+    const user = await User.findByPk(req.params.id);
+
+    if (user) {
+      user.destroy();
+      return res.status(200).json({ message: 'User Deleted!' });
+    }
+
+    return res.status(400).json({ message: 'User not found!' });
+  }
 }
 
 export default new UserController();
