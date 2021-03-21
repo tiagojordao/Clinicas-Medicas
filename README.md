@@ -8,15 +8,15 @@ Sistema para gestão de agendamentos em Clínicas Médicas, projeto da disciplin
 
 ## Endpoints
 
-- Cadastrar novos usuários (Pacientes, Atendentes e Médicos)
-- Deletar usuários
-- Listar todos os funcionários
-- Listar Médicos
-- Listar Horários disponíveis para agendamento
-- Cadastrar nova consulta
-- Deletar consulta
-- Listar consultas marcadas
-- Guardar registros das consultas
+- [POST](/user) Cadastrar novos usuários (Pacientes, Atendentes e Médicos)
+- [DELETE](/user/id) Deletar usuários
+- [GET](/funcionarios) Listar todos os funcionários
+- [GET](/medicos) Listar Médicos
+- [GET](/agenda) Listar Horários disponíveis para agendamento
+- [POST](/consulta) Cadastrar nova consulta
+- [DELETE](/consulta) Deletar consulta
+- [GET](/consulta) Listar consultas marcadas
+- [POST](/registro) Guardar registros das consultas
 
 ## Estórias
 
