@@ -24,9 +24,13 @@ class UserController {
   async update(req, res) {
     const user = await User.findByPk(req.params.id);
 
+    if(!user){
+      return res.status(401).json({error: 'Usuário não encontrado!'});
+    }
+
     const { id, name, phone, email, position } = await user.update(req.body);
 
-    return res.status(200).json({ id, name, phone, email, position });
+    return res.json({ id, name, phone, email, position });
   }
 
   async delete(req, res) {

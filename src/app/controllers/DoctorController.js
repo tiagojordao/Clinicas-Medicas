@@ -3,7 +3,7 @@ import User from '../models/UserModel';
 class DoctorController {
   async index(req, res) {
     const doctors = await User.findAll({
-      where: { position: 'Medico' },
+      where: { position: 'MEDICO' },
       attributes: ['name', 'position'],
     });
 

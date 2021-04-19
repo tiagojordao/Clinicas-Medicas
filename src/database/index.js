@@ -1,10 +1,11 @@
 import Sequelize from 'sequelize';
 
 import UserModel from '../app/models/UserModel';
+import AppointmentModel from '../app/models/AppointmentModel';
 
 import dbConfig from '../config/database';
 
-const models = [UserModel];
+const models = [UserModel, AppointmentModel];
 
 class DatabaseLoader {
   constructor() {
@@ -15,6 +16,8 @@ class DatabaseLoader {
     this.connection = new Sequelize(dbConfig);
 
     models.map((model) => model.init(this.connection));
+    AppointmentModel.associate(this.connection.models);
+
   }
 }
 
